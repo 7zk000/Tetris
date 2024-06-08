@@ -1,0 +1,44 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #000;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+.game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(10, 30px);
+  grid-template-rows: repeat(20, 30px);
+  gap: 1px;
+  background-color: #333;
+}
+
+.grid div {
+  width: 30px;
+  height: 30px;
+  background-color: #444;
+}
+
+.score-display {
+  margin-top: 20px;
+}
+
+.start-button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #555;
+  cursor: pointer;
+}
+
+.start-button:hover {
+  background-color: #777;
+}
